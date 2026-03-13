@@ -10,7 +10,7 @@ export async function POST(request: Request) {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: process.env.EMAIL_USER,
+                user: process.env.EMAIL_USER || 'pizzeria.angela.struga@gmail.com',
                 pass: process.env.EMAIL_PASS,
             },
         })
@@ -61,8 +61,8 @@ export async function POST(request: Request) {
         `
 
         await transporter.sendMail({
-            from: `"Pizzeria Angela" <${process.env.EMAIL_USER}>`,
-            to: process.env.EMAIL_TO,
+            from: `"Pizzeria Angela" <${process.env.EMAIL_USER || 'pizzeria.angela.struga@gmail.com'}>`,
+            to: process.env.EMAIL_TO || 'pizzeria.angela.struga@gmail.com',
             replyTo: email,
             subject: `🍕 New Reservation: ${name} — ${date} at ${time}`,
             html: htmlBody,
