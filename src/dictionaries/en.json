@@ -1,0 +1,124 @@
+{
+    "navigation": {
+        "home": "Home",
+        "story": "Our Story",
+        "gallery": "Gallery",
+        "reservations": "Reservations",
+        "menu": "View Full Menu"
+    },
+    "hero": {
+        "title": "Where moments matter.",
+        "subtitle": "A historic gem on the banks of the Crn Drim River, Struga.",
+        "scroll": "Scroll to explore"
+    },
+    "story": {
+        "pageTitle": "Our Story",
+        "heading": "A Legacy on the River",
+        "p1": "Nestled on the picturesque quay of the Crn Drim River in Struga, Pizzeria Angela has been a beacon of warmth and exceptional cuisine since 2002.",
+        "p2": "Our cherished building, dating back to 1926, tells its own story through rustic stone walls, a crackling fireplace, and sturdy wooden tables that have hosted generations of families and travelers.",
+        "p3": "We blend the timeless charm of our heritage with a modern culinary vision, crafting pizzas and dishes that honor tradition while embracing innovation. Every meal here is served with a view of the gentle river currents—a reminder that some things, like great food and good company, are timeless.",
+        "buildingLabel": "Historic Building",
+        "buildingYear": "Built in 1926",
+        "restaurantLabel": "Pizzeria Angela",
+        "restaurantYear": "Established 2002"
+    },
+    "menuPreview": {
+        "heading": "Signature Dishes",
+        "subheading": "A taste of what we offer",
+        "cta": "View Full Menu",
+        "items": [
+            {
+                "name": "Pizza Angela",
+                "desc": "Tomato sauce, yellow cheese, pork neck, ham, smoked sausage, mushrooms, sour cream, olives.",
+                "price": "410/880 MKD"
+            },
+            {
+                "name": "Angela House Specialty",
+                "desc": "Pork, chicken, yellow cheese, minced meat, bacon, mushrooms, sauce.",
+                "price": "690 MKD"
+            },
+            {
+                "name": "Pizza Prosciutto",
+                "desc": "Tomato sauce, yellow cheese, prosciutto, mushrooms.",
+                "price": "440/950 MKD"
+            },
+            {
+                "name": "Shtip Pastrmajlija",
+                "desc": "Choice of pork or chicken.",
+                "price": "280 MKD"
+            },
+            {
+                "name": "Bolognese",
+                "desc": "Spaghetti, minced meat.",
+                "price": "290 MKD"
+            },
+            {
+                "name": "Salad Shopska",
+                "desc": "Tomatoes, cucumbers, onions, cheese.",
+                "price": "200 MKD"
+            }
+        ]
+    },
+    "gallery": {
+        "pageTitle": "Gallery",
+        "heading": "Moments at Angela",
+        "subheading": "Stone walls, river views, and the warmth of wood-fired ovens."
+    },
+    "reservations": {
+        "pageTitle": "Reservations",
+        "heading": "Reserve Your Table",
+        "subheading": "Join us on the banks of the Crn Drim.",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "date": "Date",
+            "time": "Time",
+            "guests": "Number of Guests",
+            "requests": "Special Requests",
+            "submit": "Reserve Now",
+            "sending": "Sending...",
+            "success": "Your reservation has been sent! We will confirm via email shortly.",
+            "error": "Something went wrong. Please try again."
+        },
+        "hours": {
+            "title": "Working Hours",
+            "weekdays": "Monday – Friday: 10:00 – 23:00",
+            "weekends": "Saturday – Sunday: 09:00 – 00:00"
+        },
+        "location": {
+            "title": "Find Us",
+            "address": "Crn Drim River Quay, Struga, North Macedonia"
+        }
+    },
+    "homePreview": {
+        "storyHeading": "A Legacy on the River",
+        "storyText": "Our building dates back to 1926. Rustic stone walls, a crackling fireplace, and sturdy wooden tables have hosted generations of families since we opened in 2002.",
+        "storyCta": "Read Our Story",
+        "galleryHeading": "Step Inside",
+        "galleryText": "From the warmth of our wood-fired interior to the serene views of the Crn Drim River — explore the charm of Angela.",
+        "galleryCta": "View Gallery",
+        "reserveHeading": "Your Table Awaits",
+        "reserveText": "Join us on the picturesque quay of the Crn Drim. Reserve your spot and enjoy an evening of great food and great company.",
+        "reserveCta": "Book a Table"
+    },
+    "findUs": {
+        "badge": "Location",
+        "heading": "Find Us",
+        "text": "Visit us at our historic location in Struga.",
+        "addressLabel": "Address",
+        "addressValue": "Crn Drim River Quay, Struga, North Macedonia",
+        "phoneLabel": "Phone",
+        "phoneValue": "+389 70 603 705",
+        "hoursLabel": "Working Hours",
+        "hoursValue1": "Sun–Thu: 10:00 – 00:00",
+        "hoursValue2": "Fri–Sat: 10:00 – 01:00"
+    },
+    "footer": {
+        "established": "Est. 2002",
+        "building": "Historic Building from 1926",
+        "address": "Crn Drim River Quay, Struga",
+        "rights": "All rights reserved.",
+        "tagline": "Where moments matter."
+    }
+}
