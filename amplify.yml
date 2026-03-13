@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - npm ci
+        - echo "EMAIL_PASS=$EMAIL_PASS" >> .env.production
     build:
       commands:
         - npm run build
