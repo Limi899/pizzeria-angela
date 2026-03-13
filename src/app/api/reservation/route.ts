@@ -69,10 +69,10 @@ export async function POST(request: Request) {
         })
 
         return NextResponse.json({ success: true })
-    } catch (error) {
+    } catch (error: any) {
         console.error('Reservation email error:', error)
         return NextResponse.json(
-            { error: 'Failed to send reservation' },
+            { error: 'Failed to send reservation', details: error.message || String(error) },
             { status: 500 }
         )
     }
