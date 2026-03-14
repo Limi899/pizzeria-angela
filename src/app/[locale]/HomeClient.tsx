@@ -81,7 +81,7 @@ const TypewriterText = ({ text, delay = 0, className = '', once = true }: { text
             initial="hidden"
             whileInView="visible"
             viewport={{ once: once, margin: "-100px" }}
-            className={`flex flex-wrap lg:flex-nowrap ${className}`}
+            className={`flex flex-nowrap ${className}`}
         >
             {letters.map((letter, index) => (
                 <motion.span
@@ -126,8 +126,15 @@ export function HomeClient({ locale, dict }: HomeClientProps) {
                     {/* Logo Removed for a cleaner look */}
 
                     {/* Title */}
-                    <h1 className={`mb-6 flex w-full justify-center font-heading leading-tight text-[#fdfbf7] lg:whitespace-nowrap ${locale === 'mk' ? 'text-2xl sm:text-4xl md:text-4xl lg:text-[3.5rem] xl:text-[4.5rem]' : 'text-3xl sm:text-4xl md:text-5xl md:leading-[1.1] lg:text-6xl'}`}>
-                        <TypewriterText text={dict.hero.title} delay={0.2} className="justify-center" />
+                    <h1 className="mb-6 flex flex-col md:flex-row md:flex-nowrap items-center w-full justify-center font-heading leading-tight text-[#fdfbf7] md:gap-x-[0.4em] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">
+                        {dict.hero.title.split('\n').map((line, i) => (
+                            <TypewriterText 
+                                key={i} 
+                                text={line} 
+                                delay={0.2 + (i * 0.4)} 
+                                className="justify-center" 
+                            />
+                        ))}
                     </h1>
 
                     {/* Subtitle */}
@@ -217,17 +224,17 @@ export function HomeClient({ locale, dict }: HomeClientProps) {
                             <div className="flex w-full items-center justify-between gap-4 max-w-sm">
                                 <div className="flex-1 text-center">
                                     <p className="mb-2 font-script text-5xl text-[#b87333] drop-shadow-md">1926</p>
-                                    <p className="text-[10px] md:text-xs tracking-[0.2em] text-[#888] uppercase whitespace-nowrap">{locale === 'en' ? 'Historic Building' : 'Историски објект'}</p>
+                                    <p className="text-[10px] md:text-xs tracking-[0.2em] text-[#888] uppercase whitespace-nowrap">{locale === 'en' ? 'Historic Building' : locale === 'mk' ? 'Историски објект' : 'Objekt Historik'}</p>
                                 </div>
                                 <div className="h-16 w-px bg-gradient-to-b from-transparent via-[#b87333]/40 to-transparent"></div>
                                 <div className="flex-1 text-center">
                                     <p className="mb-2 font-script text-5xl text-[#b87333] drop-shadow-md">2002</p>
-                                    <p className="text-[10px] md:text-xs tracking-[0.2em] text-[#888] uppercase whitespace-nowrap">{locale === 'en' ? 'Est. Pizzeria' : 'Осн. Пицерија'}</p>
+                                    <p className="text-[10px] md:text-xs tracking-[0.2em] text-[#888] uppercase whitespace-nowrap">{locale === 'en' ? 'Est. Pizzeria' : locale === 'mk' ? 'Осн. Пицерија' : 'Them. Pizzeria'}</p>
                                 </div>
                             </div>
                             <div className="my-8 h-px w-full max-w-xs bg-gradient-to-r from-transparent via-[#b87333]/30 to-transparent"></div>
                             <div className="text-center">
-                                <p className="text-sm tracking-[0.2em] text-[#aaaaaa] uppercase">{locale === 'en' ? 'Crn Drim River Quay, Struga' : 'Кеј на реката Црн Дрим, Струга'}</p>
+                                <p className="text-sm tracking-[0.2em] text-[#aaaaaa] uppercase">{locale === 'en' ? 'Crn Drim River Quay, Struga' : locale === 'mk' ? 'Кеј на реката Црн Дрим, Струга' : 'Kej i lumit Crn Drim, Strugë'}</p>
                             </div>
                         </motion.div>
                     </div>
@@ -357,7 +364,7 @@ export function HomeClient({ locale, dict }: HomeClientProps) {
                         >
                             <div className="mb-4 flex items-center gap-3">
                                 <Camera size={20} className="text-[#b87333]" />
-                                <span className="text-xs tracking-[0.3em] text-[#b87333] uppercase">{locale === 'en' ? 'Gallery' : 'Галерија'}</span>
+                                <span className="text-xs tracking-[0.3em] text-[#b87333] uppercase">{locale === 'en' ? 'Gallery' : locale === 'mk' ? 'Галерија' : 'Galeria'}</span>
                             </div>
                             <h2 className="mb-4 font-script text-3xl text-[#fdfbf7] md:text-4xl">
                                 <TypewriterText text={dict.homePreview.galleryHeading} />
@@ -478,7 +485,7 @@ export function HomeClient({ locale, dict }: HomeClientProps) {
                     >
                         <div className="mb-4 flex items-center justify-center gap-3">
                             <CalendarCheck size={20} className="text-[#b87333]" />
-                            <span className="text-xs tracking-[0.3em] text-[#b87333] uppercase">{locale === 'en' ? 'Reservations' : 'Резервации'}</span>
+                            <span className="text-xs tracking-[0.3em] text-[#b87333] uppercase">{locale === 'en' ? 'Reservations' : locale === 'mk' ? 'Резервации' : 'Rezervime'}</span>
                         </div>
                         <h2 className="mb-4 font-script text-3xl text-[#fdfbf7] md:text-5xl">
                             <TypewriterText text={dict.homePreview.reserveHeading} className="justify-center" />

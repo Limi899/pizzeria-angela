@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://pizzaangela.mk'
-    const locales = ['en', 'mk']
+    const locales = ['en', 'mk', 'sq']
     const pages = ['', '/story', '/gallery', '/reservations', '/menu']
     const lastModified = new Date()
 

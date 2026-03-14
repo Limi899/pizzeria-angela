@@ -4,7 +4,8 @@ import { Footer } from '@/components/layout/Footer'
 import { StoryClient } from './StoryClient'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-    const locale = ((await params).locale === 'mk' ? 'mk' : 'en') as 'en' | 'mk'
+    const rawLocale = (await params).locale
+    const locale = (['en', 'mk', 'sq'].includes(rawLocale) ? rawLocale : 'en') as 'en' | 'mk' | 'sq'
     const dict = await getDictionary(locale)
     return {
         title: `${dict.story.pageTitle} | Pizzeria Angela`,
@@ -13,7 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 export default async function StoryPage({ params }: { params: Promise<{ locale: string }> }) {
-    const locale = ((await params).locale === 'mk' ? 'mk' : 'en') as 'en' | 'mk'
+    const rawLocale = (await params).locale
+    const locale = (['en', 'mk', 'sq'].includes(rawLocale) ? rawLocale : 'en') as 'en' | 'mk' | 'sq'
     const dict = await getDictionary(locale)
 
     return (

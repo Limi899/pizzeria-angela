@@ -63,7 +63,7 @@ export function Navbar({ locale, dict }: NavbarProps) {
                                 className={`relative cursor-pointer text-xs lg:text-sm font-medium tracking-wider uppercase transition-colors hover:text-[#d48a47] whitespace-nowrap ${isActive ? 'text-[#d48a47]' : 'text-[#aaa]'
                                     }`}
                             >
-                                {link.key === 'menu' ? (locale === 'en' ? 'Menu' : 'Мени') : dict.navigation[link.key as keyof typeof dict.navigation]}
+                                {link.key === 'menu' ? (locale === 'en' ? 'Menu' : locale === 'mk' ? 'Мени' : 'Meny') : dict.navigation[link.key as keyof typeof dict.navigation]}
                                 {isActive && (
                                     <motion.div
                                         layoutId="nav-underline"
@@ -121,7 +121,7 @@ export function Navbar({ locale, dict }: NavbarProps) {
                                         className={`text-lg tracking-wide transition-colors ${isActive ? 'text-[#d48a47]' : 'text-[#aaa]'
                                             }`}
                                     >
-                                        {link.key === 'menu' ? (locale === 'en' ? 'Menu' : 'Мени') : dict.navigation[link.key as keyof typeof dict.navigation]}
+                                        {link.key === 'menu' ? (locale === 'en' ? 'Menu' : locale === 'mk' ? 'Мени' : 'Meny') : dict.navigation[link.key as keyof typeof dict.navigation]}
                                     </Link>
                                 )
                             })}

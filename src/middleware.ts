@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
 import { match as matchLocale } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 
-export const locales = ['en', 'mk']
+export const locales = ['en', 'mk', 'sq']
 export const defaultLocale = 'en'
 
 function getLocale(request: NextRequest): string | undefined {
@@ -41,7 +41,7 @@ export function middleware(request: NextRequest) {
 export const config = {
     matcher: [
         // Skip all internal paths (_next, api, images, favicon)
-        '/((?!_next|images|api|favicon.ico).*)',
+        '/((?!_next/static|_next/image|images|api|favicon.ico|icon.svg|apple-icon.png|manifest.json|sitemap.xml|robots.txt).*)',
         // Optional: only run on root (/) URL
         // '/'
     ],

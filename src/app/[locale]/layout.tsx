@@ -28,10 +28,14 @@ export async function generateMetadata({
     params: Promise<{ locale: string }>
 }): Promise<Metadata> {
     const { locale } = await params
-    const dict = await getDictionary(locale as 'en' | 'mk')
+    const dict = await getDictionary(locale as 'en' | 'mk' | 'sq')
     return {
         title: `Pizzeria Angela | ${dict.hero.title}`,
         description: dict.hero.subtitle,
+        icons: {
+            icon: '/icon.svg',
+            apple: '/apple-icon.png',
+        },
     }
 }
 
@@ -43,7 +47,7 @@ export default async function RootLayout({
     params: Promise<{ locale: string }>
 }>) {
     const { locale } = await params
-    const safeLocale = (locale === 'mk' ? 'mk' : 'en') as 'en' | 'mk'
+    const safeLocale = (['en', 'mk', 'sq'].includes(locale) ? locale : 'en') as 'en' | 'mk' | 'sq'
 
     return (
         <html lang={safeLocale}>

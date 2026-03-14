@@ -1,0 +1,124 @@
+{
+    "navigation": {
+        "home": "Ballina",
+        "story": "Historia Jonë",
+        "gallery": "Galeria",
+        "reservations": "Rezervime",
+        "menu": "Shiko Menunë"
+    },
+    "hero": {
+        "title": "Ku momentet\nkanë rëndësi.",
+        "subtitle": "Një gur i çmuar historik në brigjet e Dritnit Zi, Strugë.",
+        "scroll": "Lëviz poshtë për më shumë"
+    },
+    "story": {
+        "pageTitle": "Historia Jonë",
+        "heading": "Një trashëgimi në lum",
+        "p1": "E vendosur në kejin piktoresk të lumit Crn Drim në Strugë, Pizzeria Angela ka qenë simbol i ngrohtësisë dhe kuzhinës së jashtëzakonshme që nga viti 2002.",
+        "p2": "Ndërtesa jonë e çmuar, që daton nga viti 1926, tregon historinë e saj përmes mureve rustike prej guri, zjarrit që kërcet dhe tavolinave të forta prej druri që kanë pritur breza familjesh dhe udhëtarësh.",
+        "p3": "Ne bashkojmë sharmin e përjetshëm të trashëgimisë sonë me një vizion modern kulinar, duke krijuar pizza dhe pjata që nderojnë traditen ndërkohë që përqafojnë inovacionin. Çdo vakt këtu shërbehet me pamje nga rrymat e buta të lumit — një kujtesë se disa gjëra, si ushqimi i mirë dhe shoqëria e mirë, janë të përjetshme.",
+        "buildingLabel": "Objekt Historik",
+        "buildingYear": "Ndërtuar në 1926",
+        "restaurantLabel": "Pizzeria Angela",
+        "restaurantYear": "Themeluar 2002"
+    },
+    "menuPreview": {
+        "heading": "Pjatat Kryesore",
+        "subheading": "Një shije e asaj që ofrojmë",
+        "cta": "Shiko Menunë",
+        "items": [
+            {
+                "name": "Pizza Angela",
+                "desc": "Salcë domate, djathë i verdhë, qafë derri, proshutë, suxhuk i tymosur, kërpudha, salcë e thartë, ullinj.",
+                "price": "410/880 MKD"
+            },
+            {
+                "name": "Specialiteti i Shtëpisë Angela",
+                "desc": "Mish derri, mish pule, djathë i verdhë, mish i grirë, proshutë e tymosur, kërpudha, salcë.",
+                "price": "690 MKD"
+            },
+            {
+                "name": "Pizza Proshutë",
+                "desc": "Salcë domate, djathë i verdhë, proshutë, kërpudha.",
+                "price": "440/950 MKD"
+            },
+            {
+                "name": "Pastrmajlija e Shtip-it",
+                "desc": "Zgjedhni mish derri ose mish pule.",
+                "price": "280 MKD"
+            },
+            {
+                "name": "Bolognese",
+                "desc": "Spageti, mish i grirë.",
+                "price": "290 MKD"
+            },
+            {
+                "name": "Sallatë Shopska",
+                "desc": "Domate, kastraveca, qepë, djathë.",
+                "price": "200 MKD"
+            }
+        ]
+    },
+    "gallery": {
+        "pageTitle": "Galeria",
+        "heading": "Momente në Angela",
+        "subheading": "Mure guri, pamje nga lumi dhe ngrohtësia e furrës me dru."
+    },
+    "reservations": {
+        "pageTitle": "Rezervime",
+        "heading": "Rezervoni Tavolinën Tuaj",
+        "subheading": "Na u bashkoni në brigjet e Crn Drim-it.",
+        "form": {
+            "name": "Emri i Plotë",
+            "email": "Adresa Email",
+            "phone": "Numri i Telefonit",
+            "date": "Data",
+            "time": "Ora",
+            "guests": "Numri i Mysafirëve",
+            "requests": "Kërkesa të Veçanta",
+            "submit": "Rezervo Tani",
+            "sending": "Duke dërguar...",
+            "success": "Rezervimi juaj u dërgua! Do ta konfirmojmë përmes emailit së shpejti.",
+            "error": "Diçka shkoi keq. Ju lutem provoni përsëri."
+        },
+        "hours": {
+            "title": "Orari i Punës",
+            "weekdays": "E Hënë – E Premte: 10:00 – 23:00",
+            "weekends": "E Shtunë – E Diel: 09:00 – 00:00"
+        },
+        "location": {
+            "title": "Na Gjeni",
+            "address": "Kej i lumit Crn Drim, Strugë, Maqedonia e Veriut"
+        }
+    },
+    "homePreview": {
+        "storyHeading": "Një Trashëgimi në Lum",
+        "storyText": "Ndërtesa jonë daton nga viti 1926. Mure rustike prej guri, zjarri që kërcet dhe tavolina të forta prej druri kanë pritur breza familjesh që nga hapja në 2002.",
+        "storyCta": "Lexo Historinë Tonë",
+        "galleryHeading": "Hyni Brenda",
+        "galleryText": "Nga ngrohtësia e brendshme deri te pamjet e qeta të lumit Crn Drim — zbuloni sharmin e Angela-s.",
+        "galleryCta": "Shiko Galerinë",
+        "reserveHeading": "Tavolina Juaj Ju Pret",
+        "reserveText": "Na u bashkoni në kejin piktoresk të Crn Drim-it. Rezervoni vendin tuaj dhe shijoni një mbrëmje me ushqim dhe shoqëri të shkëlqyer.",
+        "reserveCta": "Rezervo"
+    },
+    "findUs": {
+        "badge": "Vendndodhja",
+        "heading": "Na Gjeni",
+        "text": "Na vizitoni në vendndodhjen tonë historike në Strugë.",
+        "addressLabel": "Adresa",
+        "addressValue": "Kej i lumit Crn Drim, Strugë, Maqedonia e Veriut",
+        "phoneLabel": "Telefoni",
+        "phoneValue": "+389 70 603 705",
+        "hoursLabel": "Orari i Punës",
+        "hoursValue1": "Die–Enj: 10:00 – 00:00",
+        "hoursValue2": "Pre–Sht: 10:00 – 01:00"
+    },
+    "footer": {
+        "established": "Them. 2002",
+        "building": "Objekt Historik nga 1926",
+        "address": "Kej i lumit Crn Drim, Strugë",
+        "rights": "Të gjitha të drejtat e rezervuara.",
+        "tagline": "Ku momentet kanë rëndësi."
+    }
+}

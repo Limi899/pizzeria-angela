@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { CheckCircle, AlertCircle, Send, Mail } from 'lucide-react'
 
 interface ReservationsClientProps {
@@ -27,8 +27,45 @@ interface ReservationsClientProps {
     }
 }
 
+function generateTimeSlots(startHour: number, endHour: number): string[] {
+    const slots: string[] = []
+    if (endHour <= startHour) {
+        // Wraps past midnight (e.g. 10:00 - 01:00)
+        for (let h = startHour; h < 24; h++) {
+            slots.push(`${String(h).padStart(2, '0')}:00`)
+            slots.push(`${String(h).padStart(2, '0')}:30`)
+        }
+        for (let h = 0; h < endHour; h++) {
+            slots.push(`${String(h).padStart(2, '0')}:00`)
+            slots.push(`${String(h).padStart(2, '0')}:30`)
+        }
+    } else {
+        for (let h = startHour; h < endHour; h++) {
+            slots.push(`${String(h).padStart(2, '0')}:00`)
+            slots.push(`${String(h).padStart(2, '0')}:30`)
+        }
+    }
+    return slots
+}
+
 export function ReservationsClient({ dict }: ReservationsClientProps) {
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+    const [selectedDate, setSelectedDate] = useState('')
+
+    const timeSlots = useMemo(() => {
+        if (!selectedDate) {
+            // Default: Sun-Thu hours (10:00 – 00:00)
+            return generateTimeSlots(10, 0)
+        }
+        const date = new Date(selectedDate + 'T12:00:00')
+        const day = date.getDay() // 0=Sun, 5=Fri, 6=Sat
+        if (day === 5 || day === 6) {
+            // Fri-Sat: 10:00 – 01:00
+            return generateTimeSlots(10, 1)
+        }
+        // Sun-Thu: 10:00 – 00:00
+        return generateTimeSlots(10, 0)
+    }, [selectedDate])
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -55,6 +92,7 @@ export function ReservationsClient({ dict }: ReservationsClientProps) {
 
             setStatus('success')
             form.reset()
+            setSelectedDate('')
         } catch {
             setStatus('error')
         }
@@ -64,6 +102,9 @@ export function ReservationsClient({ dict }: ReservationsClientProps) {
 
     const inputClass =
         'w-full rounded-xl border border-[#333] bg-[#1a1a1a] px-4 py-3 text-sm text-[#fdfbf7] placeholder-[#555] outline-none transition-all focus:border-[#b87333] focus:shadow-[0_0_15px_rgba(184,115,51,0.15)]'
+
+    // Get today's date in YYYY-MM-DD format for min attribute
+    const today = new Date().toISOString().split('T')[0]
 
     return (
         <main className="min-h-screen bg-[#111111] pt-24">
@@ -97,7 +138,7 @@ export function ReservationsClient({ dict }: ReservationsClientProps) {
                         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                             <input name="name" required placeholder={f.name} className={inputClass} />
                             <div className="relative">
-                                <Mail size={16} className="absolute top-1/2 left-4 -translate-y-1/2 text-[#555] pointer-events-none" />
+                                <Mail size={16} className="absolute top-1/2 left-4 -translate-y-1/2 text-[#fdfbf7] pointer-events-none" />
                                 <input
                                     name="email"
                                     type="email"
@@ -107,8 +148,26 @@ export function ReservationsClient({ dict }: ReservationsClientProps) {
                                 />
                             </div>
                             <input name="phone" type="tel" required placeholder={f.phone} className={inputClass} />
-                            <input name="date" type="date" required className={`${inputClass} cursor-pointer`} />
-                            <input name="time" type="time" required className={`${inputClass} cursor-pointer`} />
+                            <input
+                                name="date"
+                                type="date"
+                                required
+                                min={today}
+                                onChange={(e) => setSelectedDate(e.target.value)}
+                                className={`${inputClass} cursor-pointer`}
+                                style={{ colorScheme: 'dark' }}
+                            />
+                            <select
+                                name="time"
+                                required
+                                className={`${inputClass} cursor-pointer appearance-none`}
+                                style={{ colorScheme: 'dark' }}
+                            >
+                                <option value="" disabled selected>{f.time}</option>
+                                {timeSlots.map((slot) => (
+                                    <option key={slot} value={slot}>{slot}</option>
+                                ))}
+                            </select>
                             <input
                                 name="guests"
                                 type="number"

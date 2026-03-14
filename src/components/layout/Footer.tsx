@@ -83,7 +83,7 @@ export function Footer({ locale, dict }: FooterProps) {
                     {/* Quick Links */}
                     <div className="space-y-2">
                         <h4 className="text-sm font-semibold tracking-widest text-[#b87333] uppercase">
-                            {locale === 'en' ? 'Quick Links' : 'Брзи Линкови'}
+                            {locale === 'en' ? 'Quick Links' : locale === 'mk' ? 'Брзи Линкови' : 'Lidhje të Shpejta'}
                         </h4>
                         <nav className="flex flex-col gap-2">
                             {[
@@ -106,7 +106,7 @@ export function Footer({ locale, dict }: FooterProps) {
                     {/* Contact Info */}
                     <div className="space-y-2">
                         <h4 className="text-sm font-semibold tracking-widest text-[#b87333] uppercase">
-                            {locale === 'en' ? 'Contact' : 'Контакт'}
+                            {locale === 'en' ? 'Contact' : locale === 'mk' ? 'Контакт' : 'Kontakt'}
                         </h4>
                         <div className="space-y-3">
                             <div className="flex items-center gap-3 text-sm text-[#888]">

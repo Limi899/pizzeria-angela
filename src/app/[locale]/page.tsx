@@ -8,7 +8,8 @@ export default async function HomePage({
 }: {
     params: Promise<{ locale: string }>
 }) {
-    const locale = ((await params).locale === 'mk' ? 'mk' : 'en') as 'en' | 'mk'
+    const rawLocale = (await params).locale
+    const locale = (['en', 'mk', 'sq'].includes(rawLocale) ? rawLocale : 'en') as 'en' | 'mk' | 'sq'
     const dict = await getDictionary(locale)
 
     return (
