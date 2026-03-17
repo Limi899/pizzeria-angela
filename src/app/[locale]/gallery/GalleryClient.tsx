@@ -22,7 +22,7 @@ const galleryItems = [
     { id: 4, label: 'Dining Area', src: '/images/interior 2.jpeg', className: 'md:col-span-3 md:row-span-1' },
     { id: 8, label: 'Angela Restaurant', src: '/images/restaurant.jpeg', className: 'md:col-span-6 md:row-span-2' },
     { id: 5, label: 'Outside Setup', src: '/images/exterior 2.jpeg', className: 'md:col-span-6 md:row-span-1' },
-    { id: 7, label: 'Wood-Fired Pizza', src: '/images/IMG_2610.jpeg', className: 'md:col-span-6 md:row-span-1' },
+    { id: 7, label: 'Fireplace', src: '/images/IMG_2610.jpeg', className: 'md:col-span-6 md:row-span-1' },
     { id: 6, label: 'Crn Drim River', src: '/images/drim river.jpeg', className: 'md:col-span-12 md:row-span-2' },
 ]
 

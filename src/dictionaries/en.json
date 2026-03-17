@@ -62,12 +62,12 @@
     "gallery": {
         "pageTitle": "Gallery",
         "heading": "Moments at Angela",
-        "subheading": "Stone walls, river views, and the warmth of wood-fired ovens."
+        "subheading": "Stone walls, river views, and the warmth of our fireplace."
     },
     "reservations": {
         "pageTitle": "Reservations",
         "heading": "Reserve Your Table",
-        "subheading": "Join us on the banks of the Crn Drim.",
+        "subheading": "Join us on the banks of the Crn Drim River.",
         "form": {
             "name": "Full Name",
             "email": "Email Address",
@@ -88,7 +88,7 @@
         },
         "location": {
             "title": "Find Us",
-            "address": "Crn Drim River Quay, Struga, North Macedonia"
+            "address": "Crn Drim River, Struga, North Macedonia"
         }
     },
     "homePreview": {
@@ -96,10 +96,10 @@
         "storyText": "Our building dates back to 1926. Rustic stone walls, a crackling fireplace, and sturdy wooden tables have hosted generations of families since we opened in 2002.",
         "storyCta": "Read Our Story",
         "galleryHeading": "Step Inside",
-        "galleryText": "From the warmth of our wood-fired interior to the serene views of the Crn Drim River — explore the charm of Angela.",
+        "galleryText": "From the warmth of our fireplace to the serene views of the Crn Drim River — explore the charm of Angela.",
         "galleryCta": "View Gallery",
         "reserveHeading": "Your Table Awaits",
-        "reserveText": "Join us on the picturesque quay of the Crn Drim. Reserve your spot and enjoy an evening of great food and great company.",
+        "reserveText": "Join us on the banks of the Crn Drim River. Reserve your spot and enjoy an evening of great food and great company.",
         "reserveCta": "Book a Table"
     },
     "findUs": {
@@ -107,7 +107,7 @@
         "heading": "Find Us",
         "text": "Visit us at our historic location in Struga.",
         "addressLabel": "Address",
-        "addressValue": "Crn Drim River Quay, Struga, North Macedonia",
+        "addressValue": "Crn Drim River, Struga, North Macedonia",
         "phoneLabel": "Phone",
         "phoneValue": "+389 70 603 705",
         "hoursLabel": "Working Hours",
@@ -117,7 +117,7 @@
     "footer": {
         "established": "Est. 2002",
         "building": "Historic Building from 1926",
-        "address": "Crn Drim River Quay, Struga",
+        "address": "Crn Drim River, Struga",
         "rights": "All rights reserved.",
         "tagline": "Where moments matter."
     }

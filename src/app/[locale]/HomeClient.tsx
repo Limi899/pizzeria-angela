@@ -128,11 +128,11 @@ export function HomeClient({ locale, dict }: HomeClientProps) {
                     {/* Title */}
                     <h1 className="mb-6 flex flex-col md:flex-row md:flex-nowrap items-center w-full justify-center font-heading leading-tight text-[#fdfbf7] md:gap-x-[0.4em] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">
                         {dict.hero.title.split('\n').map((line, i) => (
-                            <TypewriterText 
-                                key={i} 
-                                text={line} 
-                                delay={0.2 + (i * 0.4)} 
-                                className="justify-center" 
+                            <TypewriterText
+                                key={i}
+                                text={line}
+                                delay={0.2 + (i * 0.4)}
+                                className="justify-center"
                             />
                         ))}
                     </h1>
@@ -234,7 +234,7 @@ export function HomeClient({ locale, dict }: HomeClientProps) {
                             </div>
                             <div className="my-8 h-px w-full max-w-xs bg-gradient-to-r from-transparent via-[#b87333]/30 to-transparent"></div>
                             <div className="text-center">
-                                <p className="text-sm tracking-[0.2em] text-[#aaaaaa] uppercase">{locale === 'en' ? 'Crn Drim River Quay, Struga' : locale === 'mk' ? 'Кеј на реката Црн Дрим, Струга' : 'Kej i lumit Crn Drim, Strugë'}</p>
+                                <p className="text-sm tracking-[0.2em] text-[#aaaaaa] uppercase">{locale === 'en' ? 'Crn Drim River, Struga' : locale === 'mk' ? 'Река Црн Дрим, Струга' : 'Drini i Zi, Strugë'}</p>
                             </div>
                         </motion.div>
                     </div>

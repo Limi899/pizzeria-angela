@@ -62,12 +62,12 @@
     "gallery": {
         "pageTitle": "Galeria",
         "heading": "Momente në Angela",
-        "subheading": "Mure guri, pamje nga lumi dhe ngrohtësia e furrës me dru."
+        "subheading": "Mure guri, pamje nga lumi dhe ngrohtësia e oxhakut tonë."
     },
     "reservations": {
         "pageTitle": "Rezervime",
         "heading": "Rezervoni Tavolinën Tuaj",
-        "subheading": "Na u bashkoni në brigjet e Crn Drim-it.",
+        "subheading": "Na u bashkoni në brigjet e lumit Drini zi.",
         "form": {
             "name": "Emri i Plotë",
             "email": "Adresa Email",
@@ -88,7 +88,7 @@
         },
         "location": {
             "title": "Na Gjeni",
-            "address": "Kej i lumit Crn Drim, Strugë, Maqedonia e Veriut"
+            "address": "Drini ZI, Strugë, Maqedonia e Veriut"
         }
     },
     "homePreview": {
@@ -96,10 +96,10 @@
         "storyText": "Ndërtesa jonë daton nga viti 1926. Mure rustike prej guri, zjarri që kërcet dhe tavolina të forta prej druri kanë pritur breza familjesh që nga hapja në 2002.",
         "storyCta": "Lexo Historinë Tonë",
         "galleryHeading": "Hyni Brenda",
-        "galleryText": "Nga ngrohtësia e brendshme deri te pamjet e qeta të lumit Crn Drim — zbuloni sharmin e Angela-s.",
+        "galleryText": "Nga ngrohtësia e oxhakut tonë deri te pamjet e qeta të lumit Crn Drim — zbuloni sharmin e Angela-s.",
         "galleryCta": "Shiko Galerinë",
         "reserveHeading": "Tavolina Juaj Ju Pret",
-        "reserveText": "Na u bashkoni në kejin piktoresk të Crn Drim-it. Rezervoni vendin tuaj dhe shijoni një mbrëmje me ushqim dhe shoqëri të shkëlqyer.",
+        "reserveText": "Na u bashkoni në brigjet e lumit Drini zi. Rezervoni vendin tuaj dhe shijoni një mbrëmje me ushqim dhe shoqëri të shkëlqyer.",
         "reserveCta": "Rezervo"
     },
     "findUs": {
@@ -107,7 +107,7 @@
         "heading": "Na Gjeni",
         "text": "Na vizitoni në vendndodhjen tonë historike në Strugë.",
         "addressLabel": "Adresa",
-        "addressValue": "Kej i lumit Crn Drim, Strugë, Maqedonia e Veriut",
+        "addressValue": "Drini ZI, Strugë, Maqedonia e Veriut",
         "phoneLabel": "Telefoni",
         "phoneValue": "+389 70 603 705",
         "hoursLabel": "Orari i Punës",
@@ -117,7 +117,7 @@
     "footer": {
         "established": "Them. 2002",
         "building": "Objekt Historik nga 1926",
-        "address": "Kej i lumit Crn Drim, Strugë",
+        "address": "Drini ZI, Strugë",
         "rights": "Të gjitha të drejtat e rezervuara.",
         "tagline": "Ku momentet kanë rëndësi."
     }
