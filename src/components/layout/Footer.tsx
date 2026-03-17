@@ -113,9 +113,12 @@ export function Footer({ locale, dict }: FooterProps) {
                                 <MapPin size={14} className="text-[#b87333]" />
                                 <span>{dict.footer.address}</span>
                             </div>
-                            <div className="flex items-center gap-3 text-sm text-[#888]">
+                             <div className="flex items-center gap-3 text-sm text-[#888]">
                                 <Phone size={14} className="text-[#b87333]" />
-                                <span>+389 70 603 705</span>
+                                <div className="flex flex-col">
+                                    <span>+389 70 603 705</span>
+                                    <span>+389 77 877 712</span>
+                                </div>
                             </div>
                             <div className="flex items-center gap-3 text-sm text-[#888]">
                                 <Clock size={14} className="text-[#b87333]" />

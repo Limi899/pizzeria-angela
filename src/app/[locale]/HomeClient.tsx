@@ -453,8 +453,6 @@ export function HomeClient({ locale, dict }: HomeClientProps) {
                                 <div className="group flex flex-col justify-start">
                                     <div className="mb-3 text-xs font-semibold tracking-widest text-[#b87333] uppercase">{dict.findUs.phoneLabel}</div>
                                     <div className="text-sm text-[#ddd] mb-4">{dict.findUs.phoneValue}</div>
-
-                                    <div className="text-sm text-[#ddd] mb-4">{dict.findUs.phoneValue}</div>
                                 </div>
 
                                 {/* Working Hours */}

@@ -29,33 +29,33 @@
         "items": [
             {
                 "name": "Pizza Angela",
-                "desc": "Salcë domate, djathë i verdhë, qafë derri, proshutë, suxhuk i tymosur, kërpudha, salcë e thartë, ullinj.",
-                "price": "410/880 MKD"
+                "desc": "Salcë domate, djathë i verdhë, mish i tharë i tymosur, proshutë, suxhuk i tymosur, kërpudha, salcë e thartë, ullinj.",
+                "price": "410/880 ден."
             },
             {
                 "name": "Specialiteti i Shtëpisë Angela",
                 "desc": "Mish derri, mish pule, djathë i verdhë, mish i grirë, proshutë e tymosur, kërpudha, salcë.",
-                "price": "690 MKD"
+                "price": "690 ден."
             },
             {
                 "name": "Pizza Proshutë",
                 "desc": "Salcë domate, djathë i verdhë, proshutë, kërpudha.",
-                "price": "440/950 MKD"
+                "price": "440/950 ден."
             },
             {
-                "name": "Pastrmajlija e Shtip-it",
+                "name": "Stipska Pastermajlija",
                 "desc": "Zgjedhni mish derri ose mish pule.",
-                "price": "280 MKD"
+                "price": "280 ден."
             },
             {
                 "name": "Bolognese",
                 "desc": "Spageti, mish i grirë.",
-                "price": "290 MKD"
+                "price": "290 ден."
             },
             {
                 "name": "Sallatë Shopska",
                 "desc": "Domate, kastraveca, qepë, djathë.",
-                "price": "200 MKD"
+                "price": "200 ден."
             }
         ]
     },
@@ -109,7 +109,7 @@
         "addressLabel": "Adresa",
         "addressValue": "Drini ZI, Strugë, Maqedonia e Veriut",
         "phoneLabel": "Telefoni",
-        "phoneValue": "+389 70 603 705",
+        "phoneValue": "+389 70 603 705, +389 77 877 712",
         "hoursLabel": "Orari i Punës",
         "hoursValue1": "Die–Enj: 10:00 – 00:00",
         "hoursValue2": "Pre–Sht: 10:00 – 01:00"

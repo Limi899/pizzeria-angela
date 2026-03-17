@@ -29,33 +29,33 @@
         "items": [
             {
                 "name": "Pizza Angela",
-                "desc": "Tomato sauce, yellow cheese, pork neck, ham, smoked sausage, mushrooms, sour cream, olives.",
-                "price": "410/880 MKD"
+                "desc": "Tomato sauce, yellow cheese, dry smoked meat, ham, smoked sausage, mushrooms, sour cream, olives.",
+                "price": "410/880 ден."
             },
             {
                 "name": "Angela House Specialty",
                 "desc": "Pork, chicken, yellow cheese, minced meat, bacon, mushrooms, sauce.",
-                "price": "690 MKD"
+                "price": "690 ден."
             },
             {
                 "name": "Pizza Prosciutto",
                 "desc": "Tomato sauce, yellow cheese, prosciutto, mushrooms.",
-                "price": "440/950 MKD"
+                "price": "440/950 ден."
             },
             {
-                "name": "Shtip Pastrmajlija",
+                "name": "Stipska Pastermajlija",
                 "desc": "Choice of pork or chicken.",
-                "price": "280 MKD"
+                "price": "280 ден."
             },
             {
                 "name": "Bolognese",
                 "desc": "Spaghetti, minced meat.",
-                "price": "290 MKD"
+                "price": "290 ден."
             },
             {
                 "name": "Salad Shopska",
                 "desc": "Tomatoes, cucumbers, onions, cheese.",
-                "price": "200 MKD"
+                "price": "200 ден."
             }
         ]
     },
@@ -109,7 +109,7 @@
         "addressLabel": "Address",
         "addressValue": "Crn Drim River, Struga, North Macedonia",
         "phoneLabel": "Phone",
-        "phoneValue": "+389 70 603 705",
+        "phoneValue": "+389 70 603 705, +389 77 877 712",
         "hoursLabel": "Working Hours",
         "hoursValue1": "Sun–Thu: 10:00 – 00:00",
         "hoursValue2": "Fri–Sat: 10:00 – 01:00"
